@@ -1,0 +1,76 @@
+{
+	"userlogs": [
+		{
+			"id": "sqdfqsdf@pactenovation.fr",
+			"password": "$2b$10$zrPlApMRxYhfOJ.hbLzL9.PAp7U2jFPd8Me9q9WfW5GlzbAoHA.F6",
+			"fails": 0
+		},
+		{
+			"id": "jslee@pactenovation.fr",
+			"password": "$2b$10$O5MOVRjDjnTDKh5lrVkXbel3WG4zD/pVZo0G8esdzQ9zMml86KPFe",
+			"fails": 0
+		},
+		{
+			"id": "admin@pactenovation.fr",
+			"password": "$2b$10$jEEehdsk32sl5EuGAL1tSOzcYaU5T7FqKyJMsOqwkfL3.MdqzZ.rG",
+			"fails": 0
+		}
+	],
+	"passwdTokens": [
+		{
+			"token": "mrd0wulsdbn3kiblqs2cx422fgxs01xiqp85hefay4fr",
+			"user": "jaesoo@pactenovation.fr",
+			"date": 1642514901502
+		},
+		{
+			"token": "4f9pxpsgp74gu3b42xrjlioy121mewp5it499ob9fef",
+			"user": "jaesoo@pactenovation.fr",
+			"date": 1642514905036
+		},
+		{
+			"token": "o5elegh6ge61jxgr91va56d5zww5swi5hpwp56bo6o",
+			"user": "ljs2112@pactenovation.fr",
+			"date": 1642514913996
+		},
+		{
+			"token": "e9hh7vdp0yfw259uce6o2ec00qnu6abkoxq0tzw4rm",
+			"user": "ljs2112@pactenovation.fr",
+			"date": 1642514917498
+		},
+		{
+			"token": "ppmxw7w2q2djc73ynj001b806lg9bwjg9o09a82mc1s",
+			"user": "ljs2112@pactenovation.fr",
+			"date": 1642514931358
+		},
+		{
+			"token": "sdv59xasb0p809u3teqvsoce1x02oq4sld4l996uaw",
+			"user": "ljs2112@pactenovation.fr",
+			"date": 1642514995977
+		},
+		{
+			"token": "lcklz9grtjcuyv7ef5xig9lthstwj8o0o8sgkhm1rmf",
+			"user": "ljs2112@pactenovation.fr",
+			"date": 1642515000062
+		},
+		{
+			"token": "g4gyo83h41jzomxcgn1e84241owww85wyotinjpk8p",
+			"user": "sssssssdf@pactenovation.fr",
+			"date": 1642515269301
+		},
+		{
+			"token": "acvfrmman72k2kx34zs0zko85m3fd9art6epcm4mhe",
+			"user": "sssssssdf@pactenovation.fr",
+			"date": 1642515272675
+		},
+		{
+			"token": "q1figg0su2oc5yz10wqk8k70q3zm8zhjnjy4da54nw8i",
+			"user": "ssssssqdfsdf@pactenovation.fr",
+			"date": 1642515277767
+		},
+		{
+			"token": "w2cytvp6x6rfe9tee233m8hvjthl7k21lsvxc2adxqsk",
+			"user": "ssssssqdfsdf@pactenovation.fr",
+			"date": 1642515307986
+		}
+	]
+}
