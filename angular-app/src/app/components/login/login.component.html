@@ -1,0 +1,25 @@
+<form>
+    <div class='bold-line'>
+        <div class='container'>
+            <div class='window'>
+                <div class='overlay'></div>
+                    <div class='content'>
+                    <div class='welcome'>Hello There!</div>
+                    <div class='subtitle'>Please sign in before using our services.</div>
+                    <p *ngIf="this.service.errorLoginMessage != ''" class ='subtitle-pop' ><b>{{this.service.errorLoginMessage}}</b></p>
+                    <div class='input-fields'>
+                        <input type='text' name='email' placeholder='Email' class='input-line full-width' [(ngModel)]="username" required>
+                        <input type='password' name='password' placeholder='Password' class='input-line full-width' [(ngModel)]="password" required>
+
+                    </div>
+                    <div class='spacing'>or  <a (click)="onForgetClick()" class='highlight'>Reset Password</a>
+                        | <a id="signUpButton" class='highlight' routerLink="/register/0">Sign up</a>
+                    </div>
+                    <div><button id="signButton" (click)="onLoginClick()" class='ghost-round full-width'>Sign in</button></div>
+                        
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</form>

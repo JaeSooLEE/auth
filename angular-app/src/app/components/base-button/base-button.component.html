@@ -1,0 +1,78 @@
+<head>
+    <script type="text/javascript">
+    window.onerror = function(errorMsg, url, lineNumber) {
+      alert(errorMsg + "" + lineNumber);
+      // alert("This is a stack trace! Wow! --> %s", error.stack);
+      return true
+    };
+    $timeout(() => errorrr)
+  </script>
+</head>
+<body>
+    <div class='bold-line'>
+        <div class='container'>
+            <div class='window'>
+                <div class='overlay'></div>
+                <div class='content'>
+                    <div class='button' (click)="this.onClickBase()">
+                        <div class='line'></div> 
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <span class='span'>GENERATE ERROR</span>
+                    </div>
+                    <div id="displayErr" class='button' (click)="this.onClickDisplay()">
+                        <div class='line'></div> 
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <span class='span'>DISPLAY ERRORS</span>
+                    </div>
+                    <div class='button' (click)="this.onClickClear()">
+                        <div class='line'></div> 
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <span class='span'>  CLEAR ALL ERRORS</span>
+                    </div>
+                    <div id="test" class='button' (click)="this.onClickShortestPath()">
+                        <div class='line'></div> 
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <div class='line'></div>
+                        <span class='span'>  TEST</span>
+                    </div>
+                    <a id="foo" class='highlight' (click)="this.onSignOut()">Sign out</a>
+                                          
+                </div>
+                
+            </div>
+            <!-- <div ng-app="" ng-init="errors = this.service.errorTraces">
+                <p ng-bind="errors"></p>
+            </div> -->
+            <!-- <div ng-app="myApp" ng-controller="myCtrl">
+                <p ng-bind="errors"></p>
+            </div>
+            
+            <script>
+            var app = angular.module('myApp', []);
+            app.controller('myCtrl', function($scope) {
+                $scope.firstname = this.service.errorTraces;
+                // $scope.lastname = "Doe";    
+            });
+            </script> -->
+
+
+            <div id="test" class='textspace' >{{this.service.errorTraces}}</div>
+            <!-- <pre>{{this.service.errorTraces}}</pre> -->
+        </div>
+    </div>
+</body>

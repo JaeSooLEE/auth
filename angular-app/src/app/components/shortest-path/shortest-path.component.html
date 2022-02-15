@@ -1,0 +1,30 @@
+
+    <div class='bold-line'>
+        <div class='container'>
+            <div class='window'>
+                <div class='overlay'></div>
+                <div class='content'>
+                    <div class='input-fields'>
+                        <input type='text' name='start-point-X' placeholder='start point X' class='input-line full-width' [(ngModel)]="depX" required>
+                        <input type='text' name='start-point-Y' placeholder='start point Y' class='input-line full-width' [(ngModel)]="depY" required>
+                        <input type='text' name='start-point-Z' placeholder='start point Z' class='input-line full-width' [(ngModel)]="depZ" required>
+
+                    </div>
+
+                    <div class='input-fields'>
+                        <input type='text' name='end-point-X' placeholder='endpointX' class='input-line full-width' [(ngModel)]="arrX" required>
+                        <input type='text' name='end-point-Y' placeholder='end point Y' class='input-line full-width' [(ngModel)]="arrY" required>
+                        <input type='text' name='end-point-Z' placeholder='end point Z' class='input-line full-width' [(ngModel)]="arrZ" required>
+
+                    </div>
+
+                    <div><button (click)="verticesTestClick()" class='ghost-round full-width'>Process shortest path</button></div>
+                    <!-- <a id="foo" class='highlight' (click)="this.onSignOut()">Sign out</a> -->
+                              
+                    <a id="foo" class='highlight' (click)="this.onClickBack()">Back</a>
+                </div>
+                
+            </div>
+            <!-- <div class='textspace' >{{this.service.errorTraces}}</div> -->
+        </div>
+    </div>

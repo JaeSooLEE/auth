@@ -1,0 +1,24 @@
+<form>
+    <div class='bold-line'>
+        <div class='container'>
+            <div class='window'>
+                <div class='overlay'></div>
+                <div class='content'>
+                <div class='welcome'>Hello There!</div>
+                <div class='subtitle'>Please register before using our services.</div>
+                <p *ngIf="this.rservice.errorRegMessage != ''" class ='subtitle-pop' ><b>{{this.rservice.errorRegMessage}}</b></p>
+                <div class='input-fields'>
+                    <input type='text' name='email' placeholder='Email' class='input-line full-width' [(ngModel)]="username" required>
+                    <input type='password' name='password' placeholder='Password' class='input-line full-width' [(ngModel)]="password" required>
+                    <input type='password' name='password' placeholder='Repeat password' class='input-line full-width' [(ngModel)]="rpassword" required>
+
+                </div>
+                <div class='spacing'>or  <a class='highlight' routerLink="/login">Sign in</a>
+                </div>
+                <div><button (click)="onValidateClick()" class='ghost-round full-width'>Sign up</button></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

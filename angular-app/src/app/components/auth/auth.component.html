@@ -1,0 +1,30 @@
+<form>
+  <div>
+    <label for="address">
+      Enter token
+    </label>
+    <input id="tokenInput" type="text" name="inToken" [(ngModel)]="inToken">
+    <h1> {{inToken}}</h1>
+
+    <button class="button" (click)=clickMe()>submit</button>
+  </div>
+
+  
+
+</form>
+
+
+<div class="center">
+    <button (click)=this.onClickGToken()>
+        generate token
+    </button>
+
+    <h1> Generated token: </h1>
+    <h1>{{tokenOnDisplay}}</h1>
+
+
+    <button (click)=this.onClickCleanTokens()>
+      clean tokens
+    </button>
+    
+</div>
