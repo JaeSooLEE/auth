@@ -34,7 +34,7 @@ usrRouter.post('/checkLogin', (req, res) => {
             const object = JSON.parse(fileData)
             let selectedUser = futil.jsonArrayContains(object.userlogs, "id", uname)
             if(selectedUser.fails > 2) {
-                res.send("Too many failures, please try again later")
+                res.send("blocked")
                     
                 setTimeout(() => {
                     selectedUser.fails = 0;
@@ -182,7 +182,7 @@ usrRouter.post('/addUser', (req, res) => {
                 if(tok != "0"){
                     console.log("token " + tok + "   " + uname)
 
-                    res.send("mail address not registered")
+                    res.send("Unkown mail address")
                     return
                 }else{
                     object.userlogs.push({"id": uname, "password": hash, "fails": 0})
@@ -195,7 +195,7 @@ usrRouter.post('/addUser', (req, res) => {
                 }
                 console.log("New user added.");
             })
-            res.send(true)
+            res.send("")
             return
 
         } catch(err) {

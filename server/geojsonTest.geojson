@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "Mantes_Export GeoJson",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::2154" } },
+"features": [
+{ "type": "Feature", "properties": { "code_ligne": "340000", "rg_troncon": 1.0, "ligne": "340000-1", "nom_voie": "V2", "code_voie": "340000-1-V2", "pk_debut_r": "000+036", "pk_fin_r": "227+918", "type_voie": "VPL", "fid": 4865.0, "layer": "Mantes_Axe_Voies_SHP", "path": "C:/QGIS-test/Mantes_Axe_Voies.shp|layername=Mantes_Axe_Voies" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [0, 0, 0 ], [1, 0, 0 ], [2, 0, 0 ], [3, 0, 0 ], [4, 0, 0 ], [5, 0, 0 ] ] ] } },
+{ "type": "Feature", "properties": { "code_ligne": "340000", "rg_troncon": 1.0, "ligne": "340000-1", "nom_voie": "VCLE", "code_voie": "340000-1-VCLE", "pk_debut_r": "044+705", "pk_fin_r": "052+916", "type_voie": "VPL", "fid": 4868.0, "layer": "Mantes_Axe_Voies_SHP", "path": "C:/QGIS-test/Mantes_Axe_Voies.shp|layername=Mantes_Axe_Voies" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [0, 2, 0], [1, 2, 0 ], [2, 3, 0 ], [2, 0, 0 ] ] ] } },
+{ "type": "Feature", "properties": { "code_ligne": "340000", "rg_troncon": 1.0, "ligne": "340000-1", "nom_voie": "V1", "code_voie": "340000-1-V1", "pk_debut_r": "000+036", "pk_fin_r": "227+918", "type_voie": "VPL", "fid": 4871.0, "layer": "Mantes_Axe_Voies_SHP", "path": "C:/QGIS-test/Mantes_Axe_Voies.shp|layername=Mantes_Axe_Voies" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [0, 2, 0 ], [1, 2, 0 ], [2, 2, 0 ], [3, 2, 0 ], [4, 2, 0 ], [5, 2, 0 ] ,[2, 0, 0 ] ] ] } }
+]
+}

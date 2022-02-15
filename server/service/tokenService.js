@@ -1,6 +1,6 @@
 import readline from "readline"
 import fs from 'fs'
-{import {FileUtil as futil} from '../utils/fileHandler.js'}
+import {FileUtil as futil} from '../utils/fileHandler.js'
 
 export class TokenService {
 

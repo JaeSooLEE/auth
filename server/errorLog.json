@@ -1,0 +1,16 @@
+{
+	"errors": [
+		{
+			"name": "...",
+			"message": "...",
+			"stackTrace": "...",
+			"date": "..."
+		},
+		{
+			"name": "...",
+			"message": "...",
+			"stackTrace": "...",
+			"date": "..."
+		}
+	]
+}

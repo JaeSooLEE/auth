@@ -12,18 +12,23 @@ import {FileUtil as futil} from '../utils/fileHandler.js'
 
 logRouter.post('/addErrors', (req, res) => {
 
-    var jsonData = JSON.stringify(req.body);
     console.log(req.body)
-    console.log(new Error(req.body.error))
-    const re = /{/
-    const re2 = /}/
-    //const r = /n    /gm
-    var ns = jsonData.replace(re, '')
-    var newstr2 = ns.replace(re2, '\n\n')
-    var newstr = newstr2.replace(/n    /gm, '\n')
+    let newdata = ""
+    const rawdata = fs.readFileSync('errorLog.json');
+    const object = JSON.parse(rawdata);
+    console.log(object.errors)
+    object.errors.push(req.body)
+    newdata = JSON.stringify(object, null, "\t")
     
-    futil.appendFile("errorLog.txt", newstr)
-    res.send();
+    fs.writeFile('errorLog.json', newdata, (err) => {
+        if (err) {
+            throw err;
+        }
+        console.log("JSON data is saved.");
+    })
+    res.send(newdata)
+      
+    
 })
 
 
@@ -33,13 +38,17 @@ logRouter.post('/addErrors', (req, res) => {
 
 logRouter.get('/getErrors', (req, res) => {
     
-    fs.readFile('errorLog.txt', 'utf8' , (err, data) => {
+    fs.readFile('errorLog.json', 'utf8' , (err, data) => {
         if (err) {
           console.error(err)
           return
         }
-        console.log(data)
-        res.send(data)
+        let resp = ""
+        const object = JSON.parse(data);
+        object.errors.forEach((e) =>{
+            resp += "name:\t" + e.name + ", message:\t" + e.message + ", stackTrace:\t" + e.stackTrace + ", date:\t" + e.date + "\n"
+        })
+        res.send(resp)
       })
 
 })
@@ -49,7 +58,7 @@ logRouter.get('/getErrors', (req, res) => {
 
 logRouter.delete('/clearErrors', (req, res) => {
 
-    futil.writeFile("errorLog.txt", "")
+    futil.writeFile("errorLog.json", "{\"errors\": []}")
     res.send()
 })
 
